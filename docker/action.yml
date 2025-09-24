@@ -173,6 +173,7 @@ runs:
     - name: Publish Test Results
       run: |
         # Publish Test Results
+        env
         platform="${{ inputs.docker_platform }}"
         docker run ${platform:+--platform $platform} \
           --workdir $GITHUB_WORKSPACE \
